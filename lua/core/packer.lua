@@ -14,5 +14,8 @@ return require('packer').startup(function(use)
     -- treesitter
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     
+    -- harpoon
+    use ('theprimeagen/harpoon')
+    
 end)
 

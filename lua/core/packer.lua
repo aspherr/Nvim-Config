@@ -3,6 +3,12 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- plugin manager
     use 'wbthomason/packer.nvim'
+
+    -- capputtcin color scheme 
+    use { 
+        "catppuccin/nvim", as = "catppuccin",
+        config = function() vim.cmd [[colorscheme catppuccin]] end
+    }
     
     -- telescope (fuzzy finder)
     use {

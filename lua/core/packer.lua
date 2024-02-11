@@ -10,6 +10,9 @@ return require('packer').startup(function(use)
         tag = '0.1.5',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-
+    
+    -- treesitter
+    use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    
 end)
 

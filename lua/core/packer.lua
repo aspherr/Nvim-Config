@@ -14,8 +14,11 @@ return require('packer').startup(function(use)
     -- treesitter
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     
-    -- harpoon
+    -- harpoon (file pins)
     use ('theprimeagen/harpoon')
+    
+    -- fugitive (git)
+    use ('tpope/vim-fugitive')
     
 end)
 

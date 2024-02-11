@@ -48,6 +48,12 @@ return require('packer').startup(function(use)
         end
     }
 
-
+    -- LSP
+    use { 
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig"
+    }
+    
 end)
 

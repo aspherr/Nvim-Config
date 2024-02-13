@@ -10,7 +10,14 @@ require("lspconfig").rust_analyzer.setup {
 }
 
 require("lspconfig").lua_ls.setup {
-    capabilites = capabilities
+    capabilites = capabilities,
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = {"vim"}
+            }
+        }
+    },
 }
 
 require("lspconfig").clangd.setup {

@@ -3,9 +3,25 @@ require("mason-lspconfig").setup({
     ensure_installed = {"rust_analyzer", "lua_ls", "clangd", "jdtls", "pylyzer"}
 })
 
-require("lspconfig").rust_analyzer.setup {}
-require("lspconfig").lua_ls.setup {}
-require("lspconfig").clangd.setup {}
-require("lspconfig").jdtls.setup {}
-require("lspconfig").pylyzer.setup {}
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+require("lspconfig").rust_analyzer.setup {
+    capabilites = capabilities
+}
+
+require("lspconfig").lua_ls.setup {
+    capabilites = capabilities
+}
+
+require("lspconfig").clangd.setup {
+    capabilites = capabilities
+}
+
+require("lspconfig").jdtls.setup {
+    capabilities = capabilities
+}
+
+require("lspconfig").pylyzer.setup {
+    capabilities = capabilities
+}
 

@@ -10,12 +10,12 @@ require('kanagawa').setup({
     transparent = false,
     dimInactive = false,
     terminalColors = true,
-    
+
     colors = {                   -- add/modify theme and palette colors
         palette = {},
         theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
     },
-    
+
     overrides = function(colors) -- add/modify highlights
         local theme = colors.theme
         return {

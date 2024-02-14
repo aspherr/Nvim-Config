@@ -4,7 +4,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- plugin manager
     use 'wbthomason/packer.nvim'
-    
+
     -- catppuccin color scheme
     use "rebelot/kanagawa.nvim"
 
@@ -17,25 +17,25 @@ return require('packer').startup(function(use)
 
     -- treesitter
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-    
+
     -- harpoon (file pins)
     use ('theprimeagen/harpoon')
-    
+
     -- fugitive (git)
     use ('tpope/vim-fugitive')
-    
+
     -- nvim-tree
     use {
         'nvim-tree/nvim-tree.lua',
         requires = { 'nvim-tree/nvim-web-devicons' }
     }
-    
+
     -- lualine 
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-    
+
 
     -- alpha nvim
     use {
@@ -45,14 +45,14 @@ return require('packer').startup(function(use)
             require'alpha'.setup(require'alpha.themes.startify'.config)
         end
     }
-    
+
     -- LSP
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig"
     }
-    
+
     -- Autocomplete
     use ('hrsh7th/cmp-nvim-lsp')
     use ('hrsh7th/nvim-cmp')

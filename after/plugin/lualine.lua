@@ -22,7 +22,7 @@ local conditions = {
     hide_in_width = function()
         return vim.fn.winwidth(0) > 80
     end,
-    
+
     check_git_workspace = function()
         local filepath = vim.fn.expand('%:p:h')
         local gitdir = vim.fn.finddir('.git', filepath .. ';')
@@ -45,7 +45,6 @@ local config = {
         lualine_b = {},
         lualine_y = {},
         lualine_z = {},
-        
         lualine_c = {},
         lualine_x = {},
     },
@@ -72,7 +71,7 @@ ins_left {
         return '▊'
     end,
 
-    color = { fg = colors.blue }, 
+    color = { fg = colors.blue },
     padding = { left = 0, right = 1 },
 }
 
@@ -164,7 +163,7 @@ ins_left {
 }
 
 ins_right {
-    'o:encoding', 
+    'o:encoding',
     fmt = string.upper,
     cond = conditions.hide_in_width,
     color = { fg = colors.green, gui = 'bold' },

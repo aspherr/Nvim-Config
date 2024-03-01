@@ -1,4 +1,2 @@
-require("core.packer")
-require("core.settings")
-require("core.keymaps")
-require("core.colors")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

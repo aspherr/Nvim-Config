@@ -18,6 +18,8 @@ require("lazy").setup({
       colorscheme = "tokyonight",
     } },
 
+    { import = "lazyvim.plugins.extras.ui.alpha" },
+
     { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.lang.java" },
     { import = "lazyvim.plugins.extras.lang.python" },

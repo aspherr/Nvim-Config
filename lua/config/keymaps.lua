@@ -1,3 +1,7 @@
+-- neotree bindings
+vim.keymap.set("n", "<C-n>", ":Neotree reveal filesystem left<CR>")
+vim.keymap.set("n", "<C-m>", ":Neotree close<CR>")
+
 -- harpoon bindings
 local harpoon = require("harpoon")
 harpoon:setup({})
